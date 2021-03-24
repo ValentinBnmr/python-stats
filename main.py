@@ -20,7 +20,7 @@ class Stats:
         min = self.s[0]
         for i in self.s:
             if i >= maxi:
-                # print("i =" + str(i)) "Comprendre le boucle *"
+                # print("i =" + str(i)) "Comprendre la boucle *"
                 maxi = i
             if i <= min:
                 # print("i =" + str(i)) "*"
@@ -52,7 +52,7 @@ class Stats:
         choice_user = ""
 
         while choice_user == "" or not(choice_user == '1' or choice_user == '2' or choice_user == "3" or choice_user == "4" or choice_user == "ALL" or choice_user == "all"):
-            choice_user = input("Choississez quel caractère statistique vous voulez : \n Moyenne : TAPER 1 \n Étendue : TAPER 2 \n Médiane = TAPER 3 \n Variance = TAPE 4 \n Pour tous les caractères : TAPER ALL \n : ")
+            choice_user = input("Choississez quel caractère statistique voulez-vous : \n Moyenne : TAPER 1 \n Étendue : TAPER 2 \n Médiane = TAPER 3 \n Variance = TAPE 4 \n Pour tous les caractères : TAPER ALL \n : ")
         print(f"La serie S = {self.s}")
         if choice_user == "1":
             print(f"La moyenne est de : {moyenne}")
